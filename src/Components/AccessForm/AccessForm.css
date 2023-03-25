@@ -1,0 +1,75 @@
+.access-modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all .4s ease 0s;
+    pointer-events: none;
+}
+.access-modal.active{
+    opacity: 1;
+    transition: all .4s ease 0s;
+    pointer-events: all;
+}
+
+.access-form{
+    width: 30vw;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+
+    color: #000;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all .4s ease 0s;
+
+    position: relative;
+}
+.access-form.active{
+    opacity: 1;
+    transform: scale(1);
+    transition: all .4s ease 0s;
+}
+
+.access-form__title button{
+    width: 25px;
+    height: 25px;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    border: none;
+    background: transparent;
+}
+.access-form__title button img{
+    width: 100%;
+    height: 100%;
+}
+
+.access-form__error{
+    color: rgb(255, 0, 0);
+}
+@media (max-width: 992px){
+    .access-form{
+        width: 60vw;
+    }
+}
+@media (max-width: 767px){
+    .access-form{
+        width: 90vw;
+    }
+}

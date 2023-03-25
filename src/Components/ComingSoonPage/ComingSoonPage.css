@@ -1,0 +1,35 @@
+.coming-soon__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coming-soon-text{
+    text-align: center;
+}
+.coming-soon-text p{
+    margin: 20px 0px 0px 0px;
+}
+
+.access-modal-btn{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    min-width: 206px;
+}
+.access-modal-btn button{
+    border: none;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+
+    color: #fff;
+    font-size: 12px;
+    transition: all .3s ease 0s;
+}
+.access-modal-btn:hover button{
+    transform: scale(0.98);
+    border-bottom: 2px solid rgb(0, 60, 255);
+    transition: all .3s ease 0s;
+}
